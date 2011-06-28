@@ -1,4 +1,4 @@
-<?
+<?php
 	// Get the URL for your own account's self feed at http://instagram.com/developer/endpoints/users/
 	$url='https://api.instagram.com/v1/users/self/feed?access_token={api_key}&count=1';
 	 
