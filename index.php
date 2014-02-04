@@ -1,7 +1,7 @@
 <?php
 	// Get the URL for your own account's self feed at http://instagram.com/developer/endpoints/users/
 	$url='https://api.instagram.com/v1/users/self/feed?access_token={api_key}&count=1';
-	 
+
 	function get_data( $url )
 	{
 		$ch = curl_init();
@@ -13,9 +13,9 @@
 		curl_close($ch);
 		return $data;
 	}
-	
+
 	$return = json_decode( get_data($url) );
-	
+
 	if ( $return->data )
 	{
 		foreach ( $return->data as $p )
